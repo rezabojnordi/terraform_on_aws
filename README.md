@@ -47,3 +47,9 @@ terraform apply
 
 terraform destroy
 ```
+### How to change access key and region
+
+```
+cat .aws/config
+cat .aws/credentials
+```
