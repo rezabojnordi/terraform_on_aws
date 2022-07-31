@@ -65,5 +65,5 @@ aws ec2 describe-vpcs
 
 aws ec2 create-security-group --group-name MySecurityGroup_vpc --description "My security group" --vpc-id vpc-0a95dbde31738083d
 
-aws ec2 create-security-groups
+aws ec2 describe-security-groups
 ```
