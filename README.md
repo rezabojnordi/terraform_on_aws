@@ -53,3 +53,10 @@ terraform destroy
 cat .aws/config
 cat .aws/credentials
 ```
+### how to work with aws cli
+```
+aws ec2 create-key-pair --key-name 'first-keypair-jul-2019' --query 'KeyMaterial' --output text > first-keypair-jul-2019.pem
+
+aws ec2 describe-key-pairs
+
+```
