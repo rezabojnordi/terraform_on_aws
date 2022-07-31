@@ -69,3 +69,18 @@ aws ec2 describe-security-groups
 
 aws ec2 authorize-security-group-ingress --group-id sg-09d33d937439474db --protocol tcp --port 22 --cidr 0.0.0.0/32
 ```
+### how to create instance with aws cli
+```
+aws ec2 describe-subnets
+
+aws ec2 run-instances --image-id ami-0d71ea30463e0ff8d --count 1 --instance-type t2.micro --key-name first-keypair-jul-2019 --security-group-ids sg-09d33d937439474db --subnet-id subnet-0d85274255bf8c64e
+
+aws ec2 delete-key-pair --key-name first-keypair-jul-2019
+
+aws ec2 describe-security-groups
+
+aws ec2 delete-security-group --group-id sg-09d33d937439474db
+
+aws ec2 terminate-instances --instance-id i-023f437728b79c
+
+```
