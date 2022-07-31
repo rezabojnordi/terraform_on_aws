@@ -66,4 +66,6 @@ aws ec2 describe-vpcs
 aws ec2 create-security-group --group-name MySecurityGroup_vpc --description "My security group" --vpc-id vpc-0a95dbde31738083d
 
 aws ec2 describe-security-groups
+
+aws ec2 authorize-security-group-ingress --group-id sg-09d33d937439474db --protocol tcp --port 22 --cidr 0.0.0.0/32
 ```
